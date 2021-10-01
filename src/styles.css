@@ -1,0 +1,44 @@
+:root{
+  font-size: 4vw;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  font-size: 5 rem;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+  margin: 0;
+}
+
+.container{
+  margin-bottom: 4vh;
+}
+
+.smallerContainer{
+  width: 20vw
+}
+.innerContainer{
+  display: flex;
+  flex-direction: row;
+  margin: 2vw;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
